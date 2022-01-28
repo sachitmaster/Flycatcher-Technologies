@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .navbar{
+            /* border: 2px solid black; */
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+        .navbar h1{
+            font-size: 2rem;
+            margin: 10px 65px;
+        }
+        .navbar .container1{
+            display: flex;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .navbar ul li{
+            display: flex;
+            /* border: 2px solid red; */
+            align-items: center;
+        }
+        .navbar .container1 .item a{
+            font-size: 1.3rem;
+            text-decoration: none;
+            margin: 0px 50px;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: row;
+        }
+        .container2{
+            padding: 0px 145px;
+            width: 495px;
+        }
+        .btn1{
+            border: none;
+            padding: 0px 0px;
+            height: 30px;
+            width: 72px;
+            border-radius: 20px;
+        }
+        #btn1{
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+        }
+        #btn2{
+            background-color: rgb(247, 203, 203);
+            font-weight: bold;
+        }
+        .container3{
+            border: 2px soid red;
+            background-color: blue;
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+            flex-direction: column;
+            height: 30vh;
+        }
+        .container3 h1{
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            margin: 22px 145px;
+            font-size: 3rem;
+        }
+        .container3 p{
+            color: white;
+            font-weight: bold;
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px 60px;
+        }
+        @media screen and (max-width:480px) {
+            .navbar{
+                margin: 0px 0px;
+                height: 45px;
+            }
+            .navbar h1{
+                font-size: .9rem;
+                margin: 0px 10px;
+            }
+            .navbar .container1 .item a{
+                margin: 0px 15px;
+                font-size: .6rem;
+            }
+            #btn1{
+                display: none;
+            }
+            #btn2{
+                display: none;
+            }
+            .container3{
+                display: flex;
+                height: 15vh;
+                width: 100vw;
+            }
+            .container3 h1{
+                display: block;
+                font-size: 1rem;
+                margin: 15px 5px;
+            }
+            .container3 p{
+                font-size: .5rem;
+                margin: 0px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+      <h1>VentureLattice</h1>
+      <div class="container1">
+         <div class="item"><a href="#">Home</a></div>
+          <div class="item"><a href="#">Services</a></div>
+          <div class="item"><a href="#">Contact</a></div>
+        </div>
+        <div class="container2">
+      <button class="btn1" id="btn1">Login</button>
+      <button class="btn1" id="btn2">SignUp</button>
+    </div>
+  </nav>
+  <div class="container3">
+      <h1>Take advantage of the articles in our library.</h1>
+      <p>Home > Blog > Flycatcher Technologies</p>
+  </div>
+</body>
+</html>

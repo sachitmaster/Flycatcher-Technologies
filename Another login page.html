@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Baloo+Bhaijaan+2:wght@600&family=Open+Sans:wght@300&family=Poppins:wght@200;300&family=Rubik:wght@500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        html{
+            font-size: 1px;
+        }
+        .container1{
+            border: 2rem solid white;
+            font-family: 'Ubuntu', sans-serif;
+            background-image: url("Rectangle 71.png");
+            background-size: cover;
+            /* height: 400vh; */
+        }
+        h1 p{
+            text-align: center;
+        }
+        .container2 input{
+            box-shadow: 1rem 2rem 2rem 1rem  black;
+            /* border: 2px solid gray; */
+            border: none;
+            border-radius: 25rem;
+            margin: 10rem 480rem;
+            padding: 0rem 25rem;
+            height: 42rem;
+            width: 248rem;
+        }
+        .text{
+            background-image: url("user (1) 1.png");
+            background-repeat: no-repeat;
+            background-size: 1remx 12rem;
+            background-position: 8rem 14rem;
+        }
+        input[type="email"]{
+            background-image: url("mail 1.png");
+            background-repeat: no-repeat;
+            background-size: 12rem 12rem;
+            background-position: 8rem 14rem;
+        }
+        input[type="password"]{
+            background-image: url("padlock 2.png");
+            background-repeat: no-repeat;
+            background-size: 12rem 12rem;
+            background-position: 8rem;
+        }
+        .number{
+            background-image: url("call (1) 1.png");
+            background-repeat: no-repeat;
+            background-size: 12rem;
+            background-position: 8rem 14rem;
+        }
+        b p{
+            text-align: center;
+        }
+        #p{
+            text-align: center;
+            border: 2rem solid white;
+            border-radius: 5rem;
+            height: 24rem;
+            width: 200rem;
+            background-color: #1A66CA;
+            margin: 0rem 520rem;
+            padding: 10rem 0rem;
+            font-size: 10rem;
+            /* justify-content: center; */
+        }
+        .otp{
+           /* border: 2px solid black; */
+           width: 100rem;
+           margin: 10rem 575rem;
+           /* border: 2px solid black; */
+        }
+        .ottp{
+            height: 10rem;
+            width: 10rem;
+        }
+        .Otp{
+            margin: 0rem 590rem;
+        }
+        .Otp a{
+            color: rgb(70, 62, 62);
+            text-decoration: none;
+            font-size: 12rem;
+            font-weight: bold;
+        }
+        .verify{
+            border: 2rem solid #1A66CA;
+            border-radius: 20rem;
+            margin: 5rem 570rem;
+            height: 35rem;
+            width: 95rem;
+            background-color: #1A66CA;
+            color: white;
+            font-weight: bold;
+        }
+        .verify:hover{
+            border: 2rem solid black;
+            background-color: black;
+        }
+        .location{
+            box-shadow: 1rem 2rem 2rem 1rem  black;
+            border: none;
+            /* border: 2px solid gray; */
+            border-radius: 25rem;
+            margin: 10rem 480rem;
+            padding: 0rem 25rem;
+            height: 42rem;
+            width: 248rem;
+            background-image: url("pin 13.png");
+            background-repeat: no-repeat;
+            background-size: 12rem 12rem;
+            background-position: 8rem 14rem;
+        }
+        .date{
+            box-shadow: 1rem 2rem 2rem 1rem  black;
+            border: none;
+            /* border: 2px solid gray; */
+            border-radius: 25rem;
+            margin: 10rem 480rem;
+            padding: 0rem 25rem;
+            height: 42rem;
+            width: 248rem;
+        }
+        .gender{
+            margin: 0rem 0rem;
+        }
+        .bold{
+            margin: 0rem 490rem;
+        }
+        .boxs{
+            /* border: 2px solid yellow; */
+            margin: 0rem 490rem;
+        }
+        .textarea{
+            box-shadow: 1rem 2rem 2rem 1rem  black;
+            border: none;
+            border-radius: 15rem;
+            margin: 0rem 500rem;
+            padding: 10rem 25rem;
+        }
+        .company{
+            box-shadow: 1rem 2rem 2rem 1rem  black;
+            border: none;
+            /* border: 2px solid gray; */
+            border-radius: 25rem;
+            margin: 10rem 480rem;
+            padding: 0rem 25rem;
+            height: 42rem;
+            width: 248rem;
+        }
+        #position{
+            box-shadow: 1rem 2rem 2rem 1rem  black;
+            border: none;
+            /* border: 2px solid gray; */
+            border-radius: 25rem;
+            margin: 10rem 480rem;
+            padding: 0rem 25rem;
+            height: 42rem;
+            width: 298rem;
+        }
+        .skills{
+            box-shadow: 1px 2px 2px 1px  black;
+            border: none;
+            /* border: 2px solid gray; */
+            border-radius: 25rem;
+            margin: 10rem 480rem;
+            padding: 0rem 25rem;
+            height: 42rem;
+            width: 248rem;
+        }
+        .pp{
+            margin: -10rem 0rem;
+        }
+        .bolds{
+            /* border: 2px solid blue; */
+            margin: 0rem 490rem;
+            /* padding: 0px 0px; */
+            font-size: 10rem;
+        }
+        .education{
+            margin: 40rem 345rem;
+        }
+        .edu{
+            /* border: 2px solid blue; */
+            width: 200rem;
+            margin: -56rem 720rem;
+            font-size: 10rem;
+        }
+        .container3{
+            border: 2rem solid white;
+            border-radius: 10rem;
+            box-shadow: 1rem 2rem 2rem 1rem;
+            background-color: white;
+            margin: 75rem 310rem ;
+            width: 600rem;
+            height: 275rem;
+        }
+        .degree{
+            font-weight: bold;
+            margin: 10rem 25rem;
+        }
+        .CU{
+            font-weight: bold;
+            margin: -78rem 190rem;
+        }
+        .GY{
+            /* border: 2px solid black; */
+            width: 200rem;
+            font-weight: bold;
+            margin: -170rem 430rem;
+        }
+        #degree{
+            margin: 10rem 10rem;
+            box-shadow: 1rem 2rem 2rem 1rem;
+            border: none;
+            font-size: 11rem;
+            /* border: 2px solid gray; */
+            border-radius: 25rem;
+            padding: 0rem 25rem;
+            height: 30rem;
+            width: 110rem;
+        }
+        #CU{
+            margin: 98rem 195rem;
+            box-shadow: 1rem 2rem 2rem 1rem  black;
+            font-size: 11rem;
+            border: none;
+            /* border: 2px solid gray; */
+            border-radius: 25rem;
+            padding: 0rem 25rem;
+            height: 30rem;
+            width: 110rem;
+        }
+        #GY{
+            margin: 193rem 410rem;
+            box-shadow: 1rem 2rem 2rem 1rem  black;
+            border: none;
+            /* border: 2px solid gray; */
+            border-radius: 25rem;
+            padding: 0rem 25rem;
+            height: 30rem;
+            width: 110rem;
+        }
+        .degre{
+            margin: -175rem 25rem;
+        }
+        .cu{
+            margin: 160rem 195rem;
+        }
+        .gy{
+            margin: -180rem 430rem;
+            /* border: 2px solid black; */
+            width: 200rem;
+        }
+        input.cancel{
+            display: inline-block;
+            margin: 175rem 450rem;
+            border: 2rem solid white;
+            color: black;
+            font-weight: bold;
+        }
+        .save{
+            display: inline-block;
+            border: 2rem solid #1A66CA;
+            background-color: #1A66CA;
+            color: white;
+            border-radius: 20rem;
+            height: 25rem;
+            width: 65rem;
+            margin: 0rem 520rem;
+            padding: 0rem 0rem;
+        }
+        .dodo{
+            margin: 6rem 505rem;
+        }
+        .para{
+            margin: -20rem 528rem;
+            /* border: 2px solid red; */
+            font-size: 12rem;
+            font-weight: bold;
+        }
+        .para2{
+            color: #1A66CA;
+        }
+        .para3{
+            color: #1A66CA;
+        }
+        #signup{
+            margin: 30rem 560rem;
+            height: 35rem;
+            width: 120rem;
+            background-color: #1A66CA;
+            color: white;
+            border-radius: 20rem;
+            border: 2px solid #1A66CA;
+            box-shadow: 1rem 2rem 2rem 1rem  black;
+        }
+        .container4{
+            border: 2rem solid white;
+            background-color: white;
+            background-image: url("pen 1.png");
+            background-position: 2rem 8rem;
+            background-size: 13rem 13rem;
+            background-repeat: no-repeat;
+            border-radius: 20rem;
+            width: 20rem;
+            height: 60rem;
+            margin: 190rem 565rem;
+            box-shadow: 1rem 1rem 2rem 1rem  black;
+        }
+        .container5{
+            /* border: 1px solid black; */
+            margin: 30rem 0rem;
+            height: 30rem;
+            width: 20rem;
+            background-image: url("delete (1) 1.png");
+            background-repeat: no-repeat;
+            background-size: 14rem 14rem;
+            background-position: 2.5rem 4rem;
+        } 
+        .container6{
+            /* border: 2px solid black; */
+            display: flex;
+            margin: -260rem -8rem;
+            font-weight: bold;
+        }
+        .container6 > p{
+            padding: 0rem 30rem ;
+        }
+        .container7{
+            margin: 320rem 360rem;
+            width: 300rem;
+            border: 2rem;
+        }
+        .container7 > input{
+            border: 2rem solid white;
+            background-color: white;
+            font-weight: bold;
+            border-radius: 20rem;
+            width: 73rem;
+            height: 32rem;
+        }
+        .container7 > .saves{
+            background-color: #1A66CA;
+            color: white;
+        }
+        .container8 > input{
+            margin: 15rem 480rem;
+            height: 30rem;
+            width: 90rem;
+            background-color: #1A66CA;
+            box-shadow: 1rem 2rem 2rem 1rem  black;
+            color: white; 
+            border: none;
+            /* font-weight: bold; */
+            border-radius: 20rem;
+        }
+        .container9{
+            margin: 0rem 480rem;
+        }
+        .container9 > .spture{
+            border: none;
+            background-color: white;
+            box-shadow: 1rem 2rem 2rem 1rem  black;
+            border-radius: 20rem;
+            height: 20rem;
+            width: 80rem;
+            padding: 0rem rem;
+        }
+        .delete{
+            display: none;
+        }
+        .boxs{
+            /* border: 2px solid black; */
+            height: 50rem;
+            width: 230rem;
+            margin: 0rem 480rem;
+        }
+        .box{
+            height: 10rem;
+            width: 15rem;
+            border-radius: 50rem;
+        }
+        @media(max-width:480px){
+            .container1{
+                width: 1260rem;
+                font-size: 16rem;
+                /* height: 435vh; */
+                /* display:block; */
+                /* background-image: url("Rectangle\ 71.png");
+                background-size: cover;
+                background-repeat: no-repeat; */
+            }
+            .container2 input{
+                height: 50rem;
+                width: 400rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <h1><p>SignUp</p></h1>
+        <div class="container2">
+            <input type="text" placeholder="Name" class="text">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <input type="number" placeholder="Phone Number" class="number">
+        </div>
+        <b><p>otp Verification</p></b>
+        <b><p id="p">We've send the verification code to your Phone Number:- 8989898989</p></b>
+        <div class="otp">
+            <input type="text" class="ottp" maxlength="1">
+            <input type="text" class="ottp" maxlength="1">
+            <input type="text" class="ottp" maxlength="1">
+            <input type="text" class="ottp" maxlength="1">
+        </div>
+        <p class="Otp"><a href="#">Resend Otp</a></p>
+        <input type="submit" value="Verified" class="verify">
+        <input type="text" class="location" placeholder="Location">
+        <input type="date" class="date">
+        <p><b class="bold">Gender</b></p>
+        <div class="boxs">
+        <input type="radio" class="box"><b>Male</b>
+        <input type="radio" class="box"><b>Female</b>
+        <input type="radio" class="box"><b>Others</b>
+    </div>
+    <p><b class="bold">Bio</b></p>
+    <textarea name="text" id="" cols="30" rows="10" placeholder="Who you are?" maxlength="300" class="textarea"></textarea>
+    <p><b class="bold">Select Company you work for</b></p>
+    <input type="text" class="company" placeholder="Company name you currently work for">
+    <p><b class="bold">Position</b></p>
+    <label for="Position"></label>
+    <select name="position" id="position">
+        <option value="select" selected>-select-</option>
+        <option value="UP">Utter Pradesh</option>
+        <option value="delhi">Delhi</option>
+        <option value="MP">Madhya Pradesh</option>
+        <option value="GJ">Gujrat</option>
+        <option value="TN">Tamil Naidu</option>
+    </select>
+    <p><b class="bold">Add Skills</b></p>
+    
+    <input type="text" class="skills" placeholder="Skills(ex.Art)">
+    <p class="pp"><b class="bolds">You can add 5 more skills</b></p>
+    <div class="container8">
+        <input type="submit" value="sculpture" class="sculp">
+        <b><p class="sugg">Suggested skills based off your profile:</p></b>
+        <div class="container9">
+        <input type="text" placeholder="Sculpture +" class="spture">
+        <input type="text" placeholder="Sculpture +" class="spture">
+        <input type="text" placeholder="Sculpture +" class="spture">
+    </div>
+    </div>
+    <p class="education"><b>Education</b></p>
+    <p class="edu"><b><a href="#">+ Add Another Education</a></b></p>
+    <div class="container3">
+        <p class="degree">Degree</p>
+        <input type="text" name="text" id="degree" placeholder="Enter Degree">
+        <p class="CU">College/University</p>
+        <input type="text" id="CU" placeholder="College/University">
+        <p class="GY">Graduation Year</p>
+        <input type="date" id="GY">
+        <p class="degre">Degree</p>
+        <p class="cu">College/University</p>
+        <p class="gy">Graduation Year</p>
+        <div class="container4">
+            <div class="container5">
+            </div>
+        </div>
+        <div class="container6">
+            <p>Degree Name</p>
+            <p>College name appears here</p>
+            <p>2020</p>
+        </div>
+        <div class="container7">
+            <input type="submit" value="Delete" class="delete">
+            <input type="submit" value="Cancel">
+            <input type="submit" value="Save" class="saves">
+        </div>
+    </div>
+    <input type="checkbox" class="dodo">
+    <p class="para">I read and agree <b class="para2">Terms</b> & <b class="para3">Condition</b></p>
+    <input type="submit" id="signup" value="Sign Up">
+    </div>  
+</body>
+</html>

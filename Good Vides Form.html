@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Good Vibes Form</title>
+        <style>
+            h1{
+                font-family: Tahoma;
+                font-size: 50px;
+            }
+            body{
+                background-color: plum;
+            }
+            p{
+                font-size: 25px;
+            }
+            .input{
+            }
+            .center{
+                border: pink solid;
+                border-radius: 20px;
+                background-color: pink;
+                margin: 0px 200px;
+            }
+            #submit{
+                padding-bottom: 5;
+                padding-top: 5px;
+                background-color: lightslategray;
+                border: solid lightslategray;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 align="center">Good Vibes Form</h1>
+        <center class="center">
+            <p>Tell us sometihng positive that happened to you today.</p>
+            Name 
+            <input type="text" placeholder="Enter your name" class="input"><br><br>
+            Email
+            <input type="text" placeholder="Enter your email address"><br><br>
+            On ascale of 1-10, how goodwas it?s
+            <input type="text" placeholder="Enter a number between 1 and 1"><br><br>
+            <label for="day">Where did it happen?</label>
+            <select name="where" id="W">
+                <option value="at home">At home</option>
+                <option value="OMC">On my commute</option>
+                <option value="AW">At work</option>
+                <option value="OTS">On the street</option>
+                <option value="O">Other</option>
+            </select><br><br>
+            At what time of day did it happen?
+            <input type="radio" name="radio">Morning<br>
+            <input type="radio" name="radio">Afternoon<br>
+            <input type="radio" name="radio">Evening<br><br>
+            What emotions did you experience?<br>
+            (Select all that apply)
+            <input type="checkbox" name="box">Excited<br>
+            <input type="checkbox" name="box">Humbled<br>
+            <input type="checkbox" name="box">Elated<br>
+            <input type="checkbox" name="box">Loved<br>
+            <input type="checkbox" name="box">Enthusiastic<br><br>
+            Please describe your positive<br>
+            <textarea name="text" id="T" cols="30" rows="10" placeholder="Enter your experience here..."></textarea><br>
+            <br><br>
+            <input type="submit" id="submit">
+        </center>
+    </body>
+</html>

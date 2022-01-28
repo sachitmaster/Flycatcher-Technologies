@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            h1{
+                font-family: Ebrima;
+            }
+            p{
+                font-size: 22px;
+            }
+            b{
+                font-size: 23px;
+                font-family: Calibri;
+            }
+            .h3{
+                font-family: Calibri;
+            }
+            .form{
+                border: black solid;
+                padding-left: 10px;
+                padding-bottom: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 align="center">Application For Permission To Date My Daughter</h1>
+        <p><b>Note:</b> Form is to be completed at least 21 days prior to date</p>
+        <form class="form">
+        <h3 class="h3">Personal Details</h3>
+        Name:<br>
+        <input type="text" placeholder="Enter name here"><br><br><br>
+        Address:<br>
+        <input type="text" placeholder="Enter address here"><br><br><br>
+        Email:<br>
+        <input type="text" placeholder="Enter email here"><br><br><br>
+        Phone Number:<br>
+        <input type="text" placeholder="Enter 10 digit numder" maxlength="10"><br><br><br>
+        IQ:<br>
+        <input type="text" placeholder="Enter IQ here"><br><br><br>
+        Gender<br><br>
+        <input type="radio" name="gender">Male<br>
+        <input type="radio" name="gender">Female<br>
+        <input type="radio" name="gender">Other<br><br>
+        Date of Proposed Outing:
+        <input type="date" name="date">
+    </form>
+    <form class="form">
+        <h3 class="h3">Check All That Apply</h3>
+        <input type="checkbox" name="box">I have tattoos and/or piercings<br>
+        <input type="checkbox" name="box">I am more than 2 years older than my dauther<br>
+        <input type="checkbox" name="box">I own a panel van or V8 ute<br>
+        <input type="checkbox" name="box">I work full-time<br>
+        <input type="checkbox" name="box">My parents are rich<br>
+        <input type="checkbox" name="box">Is the date at a well lit public location
+    </form>
+    <form class="form">
+        <h3 class="h3"><label for="per">Political Persuasion:</label></h3>
+        <select name="PP" id="pp">
+        <option value="LW">Left Wing</option>
+        <option value="RW">Right Wing</option>
+        <option value="Con">Conservative</option>
+        <option value="Naz">Nazi</option>
+    </select>
+    <h3 class="h3"><label for="edu">Education Level Completed:</label></h3>
+    <select name="ElC" id="elc">
+        <option value="uni">University</option>
+        <option value="coll">Collage</option>
+        <option value="HS">High School</option>
+        <option value="no">None</option>
+    </select>
+    </form>
+    <form class="form">
+        <h3 class="h3">In 50 words or more explain why you want to date my daughter</h3>
+        <textarea name="50words" id="50" cols="30" rows="10" placeholder="Enter Text Here"></textarea>
+        <h3 class="h3">Please upload contact details for 2 references
+        </h3>
+        <textarea name="2references" id="2" cols="30" rows="10" placeholder="Enter Text Here"></textarea>
+        <p>Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here:
+        <button>Attach Files</button></p>
+    </form>
+    <center>
+        <input type="submit" value="Send Your Application">
+    </center>
+    </body>
+</html>

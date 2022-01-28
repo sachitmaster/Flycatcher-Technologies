@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Baloo+Bhaijaan+2:wght@600&family=Open+Sans:wght@300&family=Poppins:wght@200;300&family=Rubik:wght@500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Rubik', sans-serif;
+        }
+        .container2{
+            border: 2px solid black;
+            height: 485px;
+            width: 1276px;
+            margin: 40px -8px;
+            background-image: url("dekstopview.png");
+        }
+        h2{
+            margin: 0px 0px;
+        }
+        .container3{
+            border: 2px solid red;
+            height: 50px;
+            width: 65px;
+            margin: 50px auto;
+        }
+        .container4{
+            border: 2px solid blue;
+            height: 110px;
+            width: 270px;
+            margin: -25px auto;
+        }
+        .container4 input{
+            border: 2px solid gray;
+            height: 40px;
+            width: 210px;
+            border-radius: 20px;
+            padding: 0px 25px;
+        }
+        .email{
+            background-image: url("mail 1.png");
+            background-repeat: no-repeat;
+            background-position: 6px 13px;
+            background-size: 13px 13px;
+        }
+        .password{
+            background-image: url("padlock 2.png");
+            background-repeat: no-repeat;
+            background-position: 6px 13px;
+            background-size: 13px 13px;
+        }
+        .container5{
+            /* border: 2px solid green; */
+            height: 40px;
+            width: 120px;
+            margin: 15px 535px;
+            font-size: 12px;
+        }
+        p{
+            margin: -39px -6px;
+        }
+        .checkbox{
+            margin: 25px -25px;
+        }
+        .container6{
+            /* border: 2px solid pink; */
+            /* height: 40px; */
+            width: 140px;
+            margin: -90px 715px;
+            font-size: 12px;
+        }
+        .container6 a{
+            text-decoration: none;
+            margin: 0px 0px;
+        }
+        .container6 input{
+            border: 2px solid blue;
+            border-radius: 20px;
+            height: 35px;
+            width: 110px;
+            margin: 50px -230px;
+            padding: 0px 0px;        
+            background-color: blue;
+            color: white;
+        }
+        .submit:hover{
+            background-color: rgb(110, 110, 250);
+            border: 2px solid rgb(110, 110, 250);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <div class="container2">
+                <div class="container3">
+                    <h2>Login</h2>
+                </div>
+                <div class="container4">
+                    <input type="email" name="email" class="email" placeholder="Email">
+                    <br><br>
+                    <input type="password" name="pass" class="password" placeholder="Password">
+                </div>
+                <div class="container5">
+                    <input type="checkbox" class="checkbox">
+                    <p>Remember me</p>
+                   
+                </div>
+                <div class="container6">
+                    <a href="#">Forget password</a>
+                    <input type="submit" class="submit" value="Signin" name="submit">
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

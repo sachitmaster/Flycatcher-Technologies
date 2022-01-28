@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Baloo+Bhaijaan+2:wght@600&family=Open+Sans:wght@300&family=Poppins:wght@200;300&family=Rubik:wght@500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            /* width: auto; */
+            font-family: 'Rubik', sans-serif;
+            /* box-sizing: border-box; */
+        }
+        .container2{
+            border: 2px solid white;
+            height: 485px;
+            width: 1276px;
+            margin: 40px 0px;
+            background-image: url("dekstopview.png");
+            background-repeat: no-repeat;
+        }
+        h2{
+            /* margin: 0px 0px; */
+        }
+        .container3{
+            /* border: 2px solid red; */
+            height: 50px;
+            width: 65px;
+            margin: 50px auto;
+        }
+        .container4{
+            /* border: 2px solid blue; */
+            /* display: block; */
+            height: 250px;
+            width: 360px;
+            margin: -25px auto;
+        }
+        div > input{
+            border: 2px solid gray;
+            height: 40px;
+            width: 210px;
+            margin: 0px 35px;
+            border-radius: 20px;
+            padding: 0px 25px;
+        }
+        .email{
+            background-image: url("mail 1.png");
+            background-repeat: no-repeat;
+            background-position: 6px 13px;
+            background-size: 13px 13px;
+        }
+        .password{
+            background-image: url("padlock 2.png");
+            background-repeat: no-repeat;
+            background-position: 6px 13px;
+            background-size: 13px 13px;
+        }
+        #checkbox{
+            /* height: 0px;
+            width: 0px; */
+            margin: 5px 45px;
+        }
+        #me {
+            /* border: 2px solid black; */
+            width: 313px;
+            font-size: 10px;
+            margin: -33px 63px;
+        }
+        #a{
+            font-size: 10px;
+            margin: 0px 80px;
+            text-decoration: none;
+        }
+        #submit{
+            border: 2px solid blue;
+            background-color: blue;
+            color: white;
+            border-radius: 20px;
+            margin: 10px 60px;
+            height: 36px;
+            width: 115px;
+        }
+        #submit:hover{
+            background-color: rgb(161, 165, 165);
+            border: 2px solid rgb(161, 165, 165);
+        }
+        .p{
+            font-size: 12px;
+            margin: 40px 90px;
+        }
+        .p a{
+            text-decoration: none;
+        }
+        .p a:hover{
+            color: aqua; 
+        }
+        @media (max-width:370px){
+            header{
+            /* border: 2px solid white; */
+            width: 390px;
+        }
+            .container1{
+                height: 100vh;
+                width: 100%;
+                display: block;
+            }
+            .container2{
+                display: block;
+                height: 100vh;
+                width: 100%;
+                background-image: url("data:image/jpeg;base64,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");
+                background-size: 1000px 1000px;
+            }
+        }
+        @media (min-width:400px){
+            .container2{
+                height:   100vh;
+                width: 100%;
+                background-image: url("dekstopview.png");
+            }   
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <div class="container2">
+                <div class="container3">
+                    <h2>Login</h2>
+                </div>
+                <div class="container4">
+                    <input type="email" name="email" class="email" placeholder="Email">
+                    <br><br>
+                    <input type="password" name="pass" class="password" placeholder="Password">
+                    <p>
+                        <input type="checkbox" id="checkbox"></p>
+                        <p id="me">
+                        Remember me
+                        <a href="#" id="a">Forget password</a>
+                        <input type="submit" name="submit" id="submit" value="Signin">
+                        <p class="p">Don't have an account?<a href="#"> Create</a></p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
