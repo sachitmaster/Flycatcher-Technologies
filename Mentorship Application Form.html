@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorship Application Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px 0px;
+            padding: 0pc 0px;
+            box-sizing: border-box;
+        }
+        .mentorshipform1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(180deg, #1A66CA 20.1%, rgba(26, 102, 202, 0.38) 100%);
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+        }
+        .mentorshipform1 h1{
+            border: 1px solid white;
+            margin: 20px 0px;
+            margin-bottom: 50px;
+            height: 59px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            color: #FFFFFF;
+        }
+        .mentorshipform2{
+            /* border: 2px solid black; */
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: center;
+        }
+        .mentorshipform3{
+            /* border: 2px solid red; */
+            margin: 0px 10px;
+        }
+        .mentorshipform3 p{
+            width: 165px;
+            height: 44px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 44px;
+            /* identical to box height */
+            color: #FFFFFF;
+        }
+        .mentorshipform3 input{
+            width: 275px;
+            height: 50px;
+            background: #FFFFFF;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 159px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .mentorshipform4 p{
+            width: 165px;
+            height: 44px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 44px;
+            /* identical to box height */
+            color: #FFFFFF;
+        }
+        .mentorshipform4 textarea{
+            width: 570px;
+            height: 90px;
+            background: #FFFFFF;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+        }
+        button{
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                font-weight: 800;
+                font-size: 15px;
+                margin: 25px 0px;
+                width: 180px;
+                height: 55px;
+                border-radius: 5px;
+                border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="mentorshipform1">
+        <h1>Mentorship Application Form</h1>
+        <div class="mentorshipform2">
+           <section class="mentorshipform3">
+               <p>Name</p>
+               <input type="text" class="input" placeholder="Name">
+               <p>Designation</p>
+               <input type="text" class="input" placeholder="Designation">
+           </section>
+           <section class="mentorshipform3">
+            <p>Email</p>
+            <input type="text" class="input" placeholder="Email Address">
+            <p>Mobile Number</p>
+            <input type="text" class="input" placeholder="Mobile Number">
+        </section>
+    </div>
+    <section class="mentorshipform4">
+        <p>Discription</p>
+        <textarea name="text" id="" cols="30" rows="10"></textarea>
+    </section>
+    <button>Book a Meeting</button>
+    </div>
+</body>
+</html>
